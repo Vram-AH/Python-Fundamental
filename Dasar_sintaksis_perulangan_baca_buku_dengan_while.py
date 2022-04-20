@@ -2,14 +2,23 @@
 Program perulangan membaca buku dengan while
 """
 
-Jumlah_buku = 10
-print('Ibu berkata, "Baca semua bukumu"')
+book_count = 10
+print('Mother said, "Read all your books"')
+read_count = 0
 
-jumlah_buku_yang_sudah_dibaca = 0
-print(f'Jumlah buku yang sudah dibaca {jumlah_buku_yang_sudah_dibaca}')
+understood_count = 0
+print(f'books read and understood count is {understood_count} book')
 
-while jumlah_buku_yang_sudah_dibaca < Jumlah_buku:
-    jumlah_buku_yang_sudah_dibaca = jumlah_buku_yang_sudah_dibaca + 1
-    print(f'Membaca buku ke {jumlah_buku_yang_sudah_dibaca}')
+while read_count < book_count * 2:
+    read_count = read_count + 1
+    if understood_count == 9:
+        print(f'book {understood_count + 1} is not understand yet')
+    else:
+        understood_count = understood_count + 1
+        print(f"book {understood_count} is understood")
 
-print(f'Jumlah buku yang sudah dibaca {jumlah_buku_yang_sudah_dibaca}')
+print(f'books read and understood count is {understood_count}')
+if understood_count == book_count:
+    print('"Mom, All books have been read and understood')
+else:
+    print (f'"Mom, not all books can be understood, Budi only understand {understood_count} book"')
