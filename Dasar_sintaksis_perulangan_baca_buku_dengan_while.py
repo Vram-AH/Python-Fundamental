@@ -1,5 +1,5 @@
 """
-Program perulangan membaca buku dengan while
+book reading loop program with "while"
 """
 
 book_count = 10
