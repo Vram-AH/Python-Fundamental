@@ -31,3 +31,4 @@ else:
 print("Budi pulang ke rumah")
 print("Menyampaikan hasilnya ke ibu")
 print("Ibu Pun Senang")
+print("tes")
